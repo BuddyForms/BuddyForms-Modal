@@ -1,9 +1,9 @@
 {
-  "name": "themekraft/buddyforms-mailpoet",
-  "description": "Let your users subscribe to MailPoet lists from BuddForms",
+  "name": "themekraft/buddyforms-modal",
+  "description": "Show a form inside a popup",
   "type": "wordpress-plugin",
-  "keywords": ["mailpoet", "buddyforms", "buddyforms mailpoet", "add subscriber to mailpoet", "remove a subscriber from mailpoet list", "mailpoet list"],
-  "homepage": "https://themekraft.com/products/buddyforms-mailpoet/",
+  "keywords": ["buddyforms", "buddyforms modal"],
+  "homepage": "https://themekraft.com/",
   "license": "GPL-2.0+",
   "authors": [
     {
@@ -23,9 +23,7 @@
     "bruli/php-git-hooks": "^5.1"
   },
   "scripts": {
-    "package": "sh .tk/package.sh loader",
-    "wp-release": "sh .tk/wp_release.sh",
-    "beta-release": "sh .tk/full-deploy.sh buddyforms-mailpoet 5209 false beta",
-    "full-release": "sh .tk/full-deploy.sh buddyforms-mailpoet 5209 false released"
+    "package": "sh .tk/package.sh buddyforms-modal",
+    "wp-release": "sh .tk/wp_release.sh"
   }
 }
