@@ -27,7 +27,7 @@ function buddyforms_modal_shortcode( $attr, $content ) {
 		}
 		BuddyFormsModal::setNeedAssets( true, $form_slug );
 		ob_start();
-		$trigger_link = sprintf( "<a id=\"buddyforms-modal-%s\" href=\"#TB_inline?width=%s&height=%s&inlineId=buddyforms_modal_%s\" title=\"%s\" class=\"thickbox buddyforms-modal-trigger\">%s</a><div id=\"buddyforms_modal_%s\" style=\"display:none;\">", $form_slug, $attr['width'], $attr['height'], $form_slug, $attr['modal_title'], $attr['trigger_title'], $form_slug );
+		$trigger_link = sprintf( "<a id=\"buddyforms-modal-%s\" href=\"#TB_inline?width=%s&height=%s&inlineId=buddyforms_modal_%s\" title=\"%s\" class=\"bf-thickbox buddyforms-modal-trigger\">%s</a><div id=\"buddyforms_modal_%s\" style=\"display:none;\">", $form_slug, $attr['width'], $attr['height'], $form_slug, $attr['modal_title'], $attr['trigger_title'], $form_slug );
 		$form_content = sprintf( '[bf form_slug="%s"]', $form_slug );
 		echo $trigger_link;
 		echo do_shortcode( $form_content );
